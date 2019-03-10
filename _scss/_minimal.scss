@@ -1,0 +1,102 @@
+html.minimal {
+  font-size: 0.8rem;
+
+  main {
+    max-width: 60rem;
+  }
+
+  // hide filtered success criteria
+  .sc-wrapper:not(.current) {
+    display: none!important;
+  }
+
+  // hide understanding link
+  .understanding {
+    display: none;
+  }
+
+  // hide share/back to top buttons
+  .sc-wrapper footer {
+    display: none;
+  }
+
+  // hide techniques and failures
+  .techniques-button {
+    display: none;
+  }
+
+  // hide buttons in the top filter bar
+  #expandcollapsalltechniques, #sharethisviewbutton {
+    display: none;
+  }
+
+  .sc-wrapper header h4 {
+    display: block;
+  }
+
+  // add underline to success criteria link
+  .sc-wrapper header h4 a {
+    display: flex;
+    align-items: baseline;
+  }
+
+  // hide 2.1 reference
+  .sc-wrapper header .newin21 {
+    display: none;
+  }
+
+  .sc-wrapper header strong, .sc-wrapper header [class^=level] {
+    display: block;
+    padding-right: 0;
+    font-weight: inherit;
+    white-space: inherit;
+  }
+  .sc-wrapper header strong {
+    min-width: 4rem;
+  }
+  .sc-wrapper header [class^=level] {
+    min-width: 4rem;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-left: 5px;
+    color: inherit;
+    margin: 0;
+
+    &::before {
+      content: '(';
+    }
+    &::after {
+      content: ')';
+    }
+  }
+  .sc-wrapper header .name {
+    display: block;
+  }
+
+  .sc-wrapper header .breadcrumb {
+    display: block;
+    padding-left: 8rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #666666;
+  }
+
+  .sc-content {
+    padding-left: 8rem;
+  }
+
+  // making guideline headers not so bold
+  .panel-primary .panel-heading {
+    background: transparent;
+    color: inherit;
+    border: none;
+    font-weight: bold;
+
+    h3 {
+      font-weight: inherit;
+    }
+  }
+  .panel-body-guideline {
+    background: none;
+  }
+}

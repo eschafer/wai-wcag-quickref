@@ -2546,3 +2546,64 @@ ul.notes {
   .hiddensc-inner ul {
     -moz-columns: 200px;
          columns: 200px; } }
+
+html.minimal {
+  font-size: 0.8rem; }
+  html.minimal main {
+    max-width: 60rem; }
+  html.minimal .sc-wrapper:not(.current) {
+    display: none !important; }
+  html.minimal .understanding {
+    display: none; }
+  html.minimal .sc-wrapper footer {
+    display: none; }
+  html.minimal .techniques-button {
+    display: none; }
+  html.minimal #expandcollapsalltechniques, html.minimal #sharethisviewbutton {
+    display: none; }
+  html.minimal .sc-wrapper header h4 {
+    display: block; }
+  html.minimal .sc-wrapper header h4 a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+        align-items: baseline; }
+  html.minimal .sc-wrapper header .newin21 {
+    display: none; }
+  html.minimal .sc-wrapper header strong, html.minimal .sc-wrapper header [class^=level] {
+    display: block;
+    padding-right: 0;
+    font-weight: inherit;
+    white-space: inherit; }
+  html.minimal .sc-wrapper header strong {
+    min-width: 4rem; }
+  html.minimal .sc-wrapper header [class^=level] {
+    min-width: 4rem;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-left: 5px;
+    color: inherit;
+    margin: 0; }
+    html.minimal .sc-wrapper header [class^=level]::before {
+      content: '('; }
+    html.minimal .sc-wrapper header [class^=level]::after {
+      content: ')'; }
+  html.minimal .sc-wrapper header .name {
+    display: block; }
+  html.minimal .sc-wrapper header .breadcrumb {
+    display: block;
+    padding-left: 8rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #666666; }
+  html.minimal .sc-content {
+    padding-left: 8rem; }
+  html.minimal .panel-primary .panel-heading {
+    background: transparent;
+    color: inherit;
+    border: none;
+    font-weight: bold; }
+    html.minimal .panel-primary .panel-heading h3 {
+      font-weight: inherit; }
+  html.minimal .panel-body-guideline {
+    background: none; }
